@@ -21,4 +21,4 @@ for (let i = 1; i < 10_000_000; i++) {
 
 process.stdout.write('\n count ' + count + '\n');
 performance.mark('end');
-performance.measure('Multi thread', 'start', 'end');
+performance.measure('Single thread', 'start', 'end');
