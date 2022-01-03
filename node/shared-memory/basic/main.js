@@ -5,6 +5,8 @@ const w = new Worker(__dirname + '/worker.js');
 const buffer = new SharedArrayBuffer(1024);
 const view = new Uint8Array(buffer);
 
+console.log(buffer.byteLength);
+
 console.log('now', view[0]);
 
 w.postMessage(buffer);
